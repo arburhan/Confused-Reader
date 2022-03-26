@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Book from '../Book/Book';
 import './Books.css';
 import SBooks from './Select-Books/SBooks';
+import '.././Books/Select-Books/SBooks.css';
 
 const Books = () => {
     const [books, setBooks] = useState([]);
     let [cart, setCart] = useState([]);
-    console.log(cart);
+    const [choosenCart, setChoosenCart] = useState({});
     useEffect(()=>{
         fetch('products.json')
         .then(res=>res.json())
@@ -22,19 +23,18 @@ const Books = () => {
         setCart(newCart);
     }
     // random select
-    // parini korte hobe
     const RandomNumber=()=>{
-        cart.map(newBook=>{
-            console.log(newBook.id)
+        document.getElementById('randItem').style.display='block';
         const length = cart.length;
         const randomNumber = Math.floor(Math.random() * length -1 )+1;
-        console.log(randomNumber);
-        })
+        const singleItem = cart[randomNumber];
+        setChoosenCart(singleItem);
     }
     // clear select item
     const selectAgain=()=>{
+        document.getElementById('randItem').style.display='none';
         setCart([]);
-        console.log(cart);
+        setChoosenCart({});
     }
     return (
         <div className='div-parent' >
@@ -51,6 +51,14 @@ const Books = () => {
                     }
                 </div>
                 <div>
+                    {/* <p>Random Selection: {choosenCart && choosenCart.name}</p> */}
+                    <div id='randItem' style={{display:'none'}} >
+                        <h2>Random Selection:</h2>
+                        <br />
+                        <div className='selected-items'>
+                            <span> <br /><img className='select-image' src={choosenCart.image} alt="" /></span> <span>{choosenCart.name}</span>
+                        </div>
+                    </div>
                     <button className='chooseBtn' onClick={()=>{RandomNumber()}}>Random Select</button>
                     <button className='chooseBtn' onClick={()=>{selectAgain()}} >Choose Again</button>
                 </div>

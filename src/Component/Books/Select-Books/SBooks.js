@@ -6,8 +6,7 @@ const SBooks = ({selectCart}) => {
     const {id, image, name} = selectCart;
     return (
         <div className='selected-items' >
-            <span><img className='select-image' src={image} alt="" /></span> <span>{name}</span> <span> <FontAwesomeIcon style={{margin:'0 8px', cursor:'pointer'}} icon={faTrash} /> </span>
-            
+            <span><img className='select-image' src={image} alt="" /></span> <span>{name}</span> <span> <FontAwesomeIcon style={{margin:'0 8px', cursor:'pointer'}} icon={faTrash} /> </span> 
         </div>
     );
 };

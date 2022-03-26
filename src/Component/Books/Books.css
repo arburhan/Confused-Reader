@@ -1,6 +1,7 @@
 .div-parent{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    position: relative;
 }
 
 .books-area{
@@ -10,7 +11,7 @@
     padding: 30px 20px;
 }
 
-.div-parent > .selected-books{
+.selected-books{
     position: sticky;
     top: 0;
     padding: 50px 10px;
