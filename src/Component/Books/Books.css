@@ -6,4 +6,22 @@
 .books-area{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.div-parent > .selected-books{
+    position: sticky;
+    top: 0;
+    padding: 50px 10px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 668px) {
+    .books-area{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 20px;
+    }
 }

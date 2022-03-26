@@ -1,8 +1,36 @@
 .card{
-    
+    box-shadow: 5px 5px 20px rgb(128 128 128 / 35%);
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
 }
 .card img{
     height: 286px;
     width: 185px;
     border-radius: 10px;
+    margin: 10px 0px;
+}
+.book-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.book-price{
+    padding: 15px 0px;
+    margin: 15;
+}
+button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: orange;
+    color: white;
 }
