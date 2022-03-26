@@ -11,7 +11,7 @@ const Book = ({book,cartClick}) => {
             <img src={image} alt="" />
             <p className='book-name' >{name}</p>
             <p className='book-price' >BDT: {price}</p>
-            <button onClick={()=>{cartClick(book)}} >Add to cart<FontAwesomeIcon style={{margin:'0 8px'}} icon={faShoppingCart} /></button>
+            <button className='addToCartBtn' onClick={()=>{cartClick(book)}} >Add to cart<FontAwesomeIcon style={{margin:'0 8px'}} icon={faShoppingCart} /></button>
         </div>
     );
 };

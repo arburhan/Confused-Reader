@@ -14,10 +14,15 @@ const Books = () => {
     // add to cart function
     const cartClick=(clickBook)=>{
         console.log(clickBook.id);
+        if(cart.length >5){
+            console.log('js')
+        }
         const newCart = [...cart, clickBook];
         setCart(newCart);
-        console.log(newCart);
+        console.log(cart)
+
     }
+    
     return (
         <div className='div-parent' >
             <div className='books-area' >
@@ -29,8 +34,12 @@ const Books = () => {
                 <h1>Selected Books</h1>
                 <div>
                     {
-                        cart.map(selectCart=><SBooks selectCart={selectCart} key={selectCart.id} ></SBooks>)
+                        cart.map(selectCart=><SBooks selectCart={selectCart} key={selectCart.id}></SBooks>)
                     }
+                </div>
+                <div>
+                    <button className='chooseBtn' >Choose 1 for me</button>
+                    <button className='chooseBtn' >Choose Again</button>
                 </div>
             </div>
         </div>
