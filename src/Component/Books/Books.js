@@ -14,8 +14,9 @@ const Books = () => {
     // add to cart function
     const cartClick=(clickBook)=>{
         console.log(clickBook.id);
-        if(cart.length >5){
-            console.log('js')
+        if(cart.length >3){
+            alert("You can't add more than 4 items");
+            return;
         }
         const newCart = [...cart, clickBook];
         setCart(newCart);
