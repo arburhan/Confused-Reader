@@ -28,7 +28,7 @@ button{
     cursor: pointer;
     font-size: 20px;
     margin-top: 8px;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 button:hover{
     background-color: orange;
