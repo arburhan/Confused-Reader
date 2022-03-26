@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Book from '../Book/Book';
+import './Books.css';
 
 const Books = () => {
     const [books, setBooks] = useState([]);
@@ -9,10 +10,15 @@ const Books = () => {
         .then(data=>setBooks(data))
     },[])
     return (
-        <div>
-            {
-                books.map(book=><Book book={book} key={book.id} ></Book>)
-            }
+        <div className='div-parent' >
+            <div className='books-area' >
+                {
+                    books.map(book=><Book book={book} key={book.id} ></Book>)
+                }
+            </div>
+            <div className='selected-books' >
+
+            </div>
         </div>
     );
 };
