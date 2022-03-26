@@ -1,5 +1,5 @@
 
-## [Confused Reader](https://confused-reader-ar.netlify.app/)
+# [Confused Reader](https://confused-reader-ar.netlify.app/)
 
 ### `Confused Reader Live link`
 
