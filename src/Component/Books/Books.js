@@ -5,7 +5,8 @@ import SBooks from './Select-Books/SBooks';
 
 const Books = () => {
     const [books, setBooks] = useState([]);
-    const [cart, setCart] = useState([]);
+    let [cart, setCart] = useState([]);
+    console.log(cart);
     useEffect(()=>{
         fetch('products.json')
         .then(res=>res.json())
@@ -13,17 +14,28 @@ const Books = () => {
     },[])
     // add to cart function
     const cartClick=(clickBook)=>{
-        console.log(clickBook.id);
         if(cart.length >3){
             alert("You can't add more than 4 items");
             return;
         }
         const newCart = [...cart, clickBook];
         setCart(newCart);
-        console.log(cart)
-
     }
-    
+    // random select
+    // parini korte hobe
+    const RandomNumber=()=>{
+        cart.map(newBook=>{
+            console.log(newBook.id)
+        const length = cart.length;
+        const randomNumber = Math.floor(Math.random() * length -1 )+1;
+        console.log(randomNumber);
+        })
+    }
+    // clear select item
+    const selectAgain=()=>{
+        setCart([]);
+        console.log(cart);
+    }
     return (
         <div className='div-parent' >
             <div className='books-area' >
@@ -39,8 +51,8 @@ const Books = () => {
                     }
                 </div>
                 <div>
-                    <button className='chooseBtn' >Choose 1 for me</button>
-                    <button className='chooseBtn' >Choose Again</button>
+                    <button className='chooseBtn' onClick={()=>{RandomNumber()}}>Random Select</button>
+                    <button className='chooseBtn' onClick={()=>{selectAgain()}} >Choose Again</button>
                 </div>
             </div>
         </div>
