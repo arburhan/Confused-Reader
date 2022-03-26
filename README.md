@@ -3,9 +3,10 @@
 
 ### `Confused Reader Live link`
 
-Open [Confused Reader Live link](https://confused-reader-ar.netlify.app/) to view it in your browser.
+Open [https://confused-reader-ar.netlify.app/](https://confused-reader-ar.netlify.app/) to view it in your browser.
 
-
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Project Details: 
+এখানে কিছু বই আছে । অনেক সময় একই সাথে বেশ কয়েকটা বই পড়তে ইচ্ছা করে । কিন্তু কোন বই আগে পড়ব সেটা সিদ্ধান্ত নিতে পারি না । সেই সমস্যার সামাধান এইটা । ৪ টা বই সিলেক্ট করা যাবে এর বেশী সিলেক্ট করা যাবে না । এই ৪ বইয়ের মধ্যে Random Select এ ক্লিক করলে Randomly আপনাকে সাজেশন করবে কোন বই আগে পড়বেন । আর Choose Again এ ক্লিক করলে সব সিলেকশন ও রান্ডম সিলেকশন মুছে যাবে এবং আপনি নতুন ভাবে সিলেক্ট করতে পারবেন । 
+তো আর দেরি কি ? 
+এখনি explore করুন । :) 
 # lucky-one-arburhan
