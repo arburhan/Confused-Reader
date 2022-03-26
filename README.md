@@ -1,9 +1,9 @@
 
-## Confused Reader
+## [Confused Reader](https://confused-reader-ar.netlify.app/)
 
 ### `Confused Reader Live link`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [Confused Reader Live link](https://confused-reader-ar.netlify.app/) to view it in your browser.
 
 
 
